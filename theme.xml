@@ -1,0 +1,235 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+    <formatVersion>7</formatVersion>
+    <view name="screen">
+
+        <text name="clock">
+            <color>000000</color>
+            <fontPath>./assets/SEA.ttf</fontPath>
+            <fontSize>0.039</fontSize>
+            <pos>0.48 0.010</pos>
+            <origin>0 0</origin>
+            <size>0.09 0.058</size>
+            <alignment>center</alignment>
+            <verticalAlignment>center</verticalAlignment>
+        </text>
+        <controllerActivity name="controllerActivity">
+            <visible>false</visible>
+            <pos>0.0297 0.010</pos>
+            <size>0.085 0.025</size>
+            <horizontalAlignment>right</horizontalAlignment>
+            <itemSpacing>0.003</itemSpacing>
+            <imagePath>./assets/gamepad.svg</imagePath>
+            <color>000000</color>
+            <activityColor>A0A0FFC0</activityColor>
+            <hotkeyColor>ffffff</hotkeyColor>
+        </controllerActivity>
+        <batteryIndicator name="batteryIndicator">
+            <pos>0.91 0.005</pos>
+            <size>0.07 0.050</size>
+            <color>7b6755</color>
+            <itemSpacing>0.01</itemSpacing>
+            <full>./_inc/images/battery-100-horizontal.svg</full>
+            <at75>./_inc/images/battery-75-horizontal.svg</at75>
+            <at50>./_inc/images/battery-50-horizontal.svg</at50>
+            <at25>./_inc/images/battery-25-horizontal.svg</at25>
+            <empty>./_inc/images/battery-0-horizontal.svg</empty>
+            <incharge>./_inc/images/battery-charging-horizontal.svg</incharge>
+            <networkIcon>./_inc/images/wifi-vertical.svg</networkIcon>
+        </batteryIndicator>
+    </view>
+    <view name="menu">
+        <menuText name="menutitle">
+            <fontPath>./assets/FOT.ttf</fontPath>
+            <fontSize>0.046</fontSize>
+            <color>000000</color>
+        </menuText>
+        <menuText name="menufooter">
+            <fontPath>./assets/SEA.ttf</fontPath>
+            <fontSize>0.04</fontSize>
+        </menuText>
+        <menuText name="menutext">
+            <fontPath>./assets/SEA.ttf</fontPath>
+            <fontSize>0.039</fontSize>
+            <color>000000</color>
+            <selectorColor>454545</selectorColor>
+            <selectorColorEnd>1a1a1a</selectorColorEnd>
+            <selectedColor>ffffff</selectedColor>
+            <separatorColor>818181</separatorColor>
+        </menuText>
+        <menuTextSmall name="menutextsmall">
+            <fontPath>./assets/SEA.ttf</fontPath>
+            <fontSize>0.02</fontSize>
+        </menuTextSmall>
+        <menuBackground name="menubg">
+            <color>f7eee6</color>
+            <cornerSize>32 32</cornerSize>
+        </menuBackground>
+    </view>
+    <view name="system">
+        <image name="staticBackground">
+            <size>1 1</size>
+            <pos>0 0</pos>
+            <origin>0 0</origin>
+            <tile>false</tile>
+            <linearSmooth>true</linearSmooth>
+            <path>./assets/bg1.jpg</path>
+            <zIndex>0</zIndex>
+        </image>
+        <helpsystem name="help">
+            <origin>0.5 0</origin>
+            <pos>0.5 0.95</pos>
+            <textColor>7b6755</textColor>
+            <iconColor>7b6755</iconColor>
+        </helpsystem>
+        <image name="logo">
+            <path>./art/${system.theme}.svg</path>
+            <color>000000</color>
+            <!-- <verticalAlignment>bottom</verticalAlignment> -->
+        </image>
+        <text name="logoText">
+            <fontPath>./assets/FOT.ttf</fontPath>
+            <fontSize>0.092</fontSize>
+            <color>000000</color>
+        </text>
+    </view>
+    <view name="basic">
+     <textlist name="gamelist">
+            <selectorColor>494949</selectorColor>
+            <selectorColorEnd>1e1e1e</selectorColorEnd>
+            <selectedColor>ffffff</selectedColor>
+            <primaryColor>000000</primaryColor>
+            <secondaryColor>ffffff</secondaryColor>
+            <fontPath>./assets/SEA.ttf</fontPath>
+            <fontSize>0.04</fontSize>
+            <pos>0.5 0.1</pos>
+            <size>1 0.8</size>
+            <alignment>center</alignment>
+            <horizontalMargin>0.01</horizontalMargin>
+            <origin>0.5 0</origin>
+            <lineSpacing>1.7</lineSpacing>
+            <selectorImagePath>./assets/box.png</selectorImagePath>
+            <selectorOffsetY>-0.01</selectorOffsetY>
+            <selectorHeight>0.0775</selectorHeight>
+        </textlist>
+
+	
+</view>
+    <view name="detailed">
+        <helpsystem name="help">
+            <origin>0.5 0</origin>
+            <pos>0.5 0.95</pos>
+            <textColor>7b6755</textColor>
+            <iconColor>7b6755</iconColor>
+        </helpsystem>
+
+        <text name="system_name"
+              extra="true">
+            <text>${system.fullName}</text>
+            <forceUppercase>0</forceUppercase>
+            <size>0.42 0.025</size>
+            <pos>0.02 0.015</pos>
+            <color>7b6755</color>
+            <fontPath>./assets/SEA.ttf</fontPath>
+            <fontSize>0.04</fontSize>
+            <zIndex>8</zIndex>
+        </text>
+        <text name="md_lbl_genre, md_genre, md_lbl_rating, md_lbl_developer, md_lbl_publisher, md_publisher, md_lbl_lastplayed, md_lbl_playcount, md_playcount, md_lbl_releasedate">
+            <visible>false</visible>
+        </text>
+        <rating name="md_rating">
+            <visible>false</visible>
+        </rating>
+        <image name="md_mix">
+            <origin>0.5 0.5</origin>
+            <pos>0.73 0.35</pos>
+            <maxSize>0.8 0.7</maxSize>
+            <stretch>true</stretch>
+            <zIndex>0</zIndex>
+        </image>
+        <video name="md_video">
+            <origin>0.5 0.5</origin>
+            <pos>0.73 0.34</pos>
+            <maxSize>0.8 0.7</maxSize>
+            <delay>0.3</delay>
+            <stretch>true</stretch>
+            <zIndex>1</zIndex>
+        </video>
+        <image name="marqueebg"
+               extra="true">
+            <origin>0 0</origin>
+            <pos>0.453 0.53</pos>
+            <maxSize>0.6 0.24</maxSize>
+            <path>./assets/marqueebg.png</path>
+            <zIndex>4</zIndex>
+        </image>
+        <image name="md_marquee">
+            <origin>0.5 0.5</origin>
+            <pos>0.73 0.65</pos>
+            <maxSize>0.46 0.15</maxSize>
+            <color>ffffff</color>
+            <zIndex>5</zIndex>
+        </image>
+        <text name="md_description">
+            <pos>0.48 0.74</pos>
+            <size>0.5 0.17</size>
+            <color>ffffff</color>
+            <fontSize>0.025</fontSize>
+            <fontPath>./assets/FOT.ttf</fontPath>
+        </text>
+        <image name="logo">
+            <pos>1 1</pos>
+            <color>00000000</color>
+            <path>./assets/box.png</path>
+        </image>
+
+    </view>
+    <view name="detailed">
+        <textlist name="gamelist">
+            <selectorColor>494949</selectorColor>
+            <selectorColorEnd>1e1e1e</selectorColorEnd>
+            <selectedColor>ffffff</selectedColor>
+            <primaryColor>000000</primaryColor>
+            <secondaryColor>ffffff</secondaryColor>
+            <fontPath>./assets/SEA.ttf</fontPath>
+            <fontSize>0.04</fontSize>
+            <pos>0.014 0.1</pos>
+            <size>0.42 0.8</size>
+            <alignment>left</alignment>
+            <horizontalMargin>0.01</horizontalMargin>
+            <origin>0 0</origin>
+            <lineSpacing>1.7</lineSpacing>
+            <selectorImagePath>./assets/box.png</selectorImagePath>
+            <selectorOffsetY>-0.01</selectorOffsetY>
+            <selectorHeight>0.0775</selectorHeight>
+        </textlist>
+    </view>
+    <view name="system">
+        <carousel name="systemcarousel">
+            <origin>0 0</origin>
+            <pos>0 0</pos>
+            <size>1 1</size>
+            <color>00000000</color>
+            <type>horizontal</type>
+            <logoScale>2.3</logoScale>
+            <logoSize>0.25 0.16</logoSize>
+            <maxLogoCount>2</maxLogoCount>
+            <maxLogoCount ifSubset="system-view-style:centered-one-logo">1</maxLogoCount>
+            <scrollSound>./_inc/sounds/scroll.wav</scrollSound>
+            <defaultTransition>instant</defaultTransition>
+        </carousel>
+        <text name="systemInfo">
+            <pos>0 0.59</pos>
+            <size>1 0.25</size>
+            <backgroundColor>00000000</backgroundColor>
+            <color>000000</color>
+            <fontPath>./assets/SEA.ttf</fontPath>
+            <fontSize>0.03</fontSize>
+        </text>
+    </view>
+    <subset name="background">
+        <include name="style1">./assets/style1.xml</include>
+        <include name="style2">./assets/style2.xml</include>
+        <include name="style3">./assets/style3.xml</include>    
+</subset>
+</theme>
